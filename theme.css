@@ -1703,14 +1703,15 @@ div.mermaid::after {
 
 /*
 * ======================================
-* 主题Dawm修改
+* table修改
 * ======================================
 */
 
-/* table大小 回到到和正文字一样大 他默认是小的 */
+/* table 字体大小 */
 .markdown-rendered th {
   font-size: var(--font-ui-medium);
 }
+/* table 字体大小 */
 .markdown-rendered tbody>tr>td {
   font-size: var(--font-ui-medium);
 }
