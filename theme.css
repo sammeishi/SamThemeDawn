@@ -1724,3 +1724,13 @@ div.mermaid::after {
   background: transparent;
 }
 
+/*
+* ======================================
+* sam
+* header修改，2,3,4级标题
+* ======================================
+*/
+/* 每个header标题下面增加间隙 */
+.cm-s-obsidian .cm-line.HyperMD-header {
+  padding-bottom: 5px;
+}
