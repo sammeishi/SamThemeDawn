@@ -1703,15 +1703,20 @@ div.mermaid::after {
 
 /*
 * ======================================
-* table修改
+* sam修改 这行到末尾都是修改
 * ======================================
 */
 
-/* table 字体大小 */
+/* 
+-----------------------------------
+table修改
+----------------------------------
+*/
+/* table 字体大小 默认是小的改成正常*/
 .markdown-rendered th {
   font-size: var(--font-ui-medium);
 }
-/* table 字体大小 */
+/* table 字体大小 默认是小的改成正常 */
 .markdown-rendered tbody>tr>td {
   font-size: var(--font-ui-medium);
 }
@@ -1723,12 +1728,15 @@ div.mermaid::after {
 .markdown-rendered tbody tr:nth-child(2n) {
   background: transparent;
 }
+/* 移动table顶部 obsidain会强制插入一个div导致间隙 */
+.cm-line:has(+ .cm-embed-block.cm-table-widget) br {
+  display: none;
+}
 
-/*
-* ======================================
-* sam
-* header修改，2,3,4级标题
-* ======================================
+/* 
+-----------------------------------
+header标题修改
+----------------------------------
 */
 /* 每个header标题下面增加间隙 */
 .cm-s-obsidian .cm-line.HyperMD-header {
